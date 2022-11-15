@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    /* .container{
+  display: inline-block;
+  position:relative;
+  cursor:pointer;
+  font-size:30px;
+  user-select: none;
+  padding-left:40px;
+  margin-bottom:10px;
+}
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+.checkmark{
+  position:absolute;
+  top:0;
+  left:0;
+  width:30px;
+  height:30px;
+  background:#eee;
+  border-radius:3px;
+}
+.container:hover .checkmark{
+  background:#ccc;
+}
+.checkmark:after{
+  content:"";
+  position:absolute;
+  display:none;
+}
+.container .checkmark:after{
+  top:50%;
+  left:50%;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  transform:translate(-50%,-50%) rotate(45deg);
+}
+.container input:checked ~ .checkmark{
+  background:#2196F3;
+}
+.container input:checked ~ .checkmark:after{
+  display:block;
+} */
+.control-icon{
+    height: 16px;
+    width: 26px;
+    border: 1px solid #000000;
+}
+.control{
+    display: relative;
+    margin-left: 50px;
+    height: 50px;
+    width: 50px;
+    border: 1px solid #000000;
+}
+.control .text-control{
+    position: absolute;
+    
+}
+.control .control-icon{
+    position: absolute;
+ 
+}
+.control .control-option{
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  border: 1px solid red;
+}
+  </style>
+</head>
+<body>
+  <!-- <h1>Custom checkbox Buttons</h1>
+  <label class="container">1
+    <input type="checkbox" checked="checked">
+    <span class="checkmark"></span>
+  </label>
+  <label class="container">2
+    <input type="checkbox">
+    <span class="checkmark"></span>
+  </label>
+  <label class="container">3
+    <input type="checkbox">
+    <span class="checkmark"></span>
+  </label>
+  <div class="fliter">
+    <div class="dropdown">
+        <div class="dropdown-list">
+            <div class="dropdown-btn">
+                <div class="text-dropdown">20 bản ghi trên 1 trang</div>
+                <div class="btnDropdownPaging icon-dropdowns icon-downs"></div>
+            </div>
+            <div class="dropdown-menu" hidden>
+                <div class="text-dropdown dropdown-select">10 bản ghi trên 1 trang</div>
+                <div class="text-dropdown dropdown-select">20 bản ghi trên 1 trang</div>
+                <div class="text-dropdown dropdown-select">30 bản ghi trên 1 trang</div>
+                <div class="text-dropdown dropdown-select">50 bản ghi trên 1 trang</div>
+                <div class="text-dropdown dropdown-select">100 bản ghi trên 1 trang</div>
+            </div>
+        </div>
+        
+    </div>
+    <button class="btn-paging">Trước</button>
+    <div>...</div>
+    <button class="btn-paging">Sau</button>
+    
+</div> -->
+
+<div class="control">
+  <div class="text-control">Sửa</div>
+  <div class="control-icon icon-control"></div>
+  <div class="control-option">
+      
+  </div>
+</div>
+
+<!-- <div id="loading">
+  <div ><img src="/assets/loading.svg" /> Please Wait</div>
+</div> -->
+<script>
+  $(document).ajaxStart(function(){
+    $('#loading').show();
+ }).ajaxStop(function(){
+    $('#loading').hide();
+ });
+</script>
+</body>
+</html>
